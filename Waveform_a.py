@@ -8,7 +8,8 @@ vowel = 'a'
 
 # cascade model
 cas_f_a = [660, 1200, 2550, 3500, 4000]  # cutoff frequency
-cas_b_a = [100, 70, 200, 250, 200]
+cas_b_a = [130, 70, 200, 250, 200]
+
 cas_output = cascade_waveform(vowel, cas_f_a, cas_b_a)
 
 # parallel model

@@ -8,7 +8,7 @@ def plot_individual_formant_amplitude(vowel,f_Hz, amp_1, amp_2, amp_3, amp_4, am
     f_Hz: numpy array, frequency in Hz
     amp_1, amp_2, amp_3, amp_4, amp_5: numpy array, amplitude in dB for formants 1, 2, 3, 4 and 5
 
-    output: plot of the amplitude spectrum of three resonators
+    output: plot of the amplitude spectrum of five resonators
     '''
     plt.figure(f'individual formant for amplitude [{vowel}]')
     plt.plot(f_Hz, amp_1[0], label='F1', color="blue")

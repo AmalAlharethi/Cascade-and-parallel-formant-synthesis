@@ -7,8 +7,8 @@ from Generate_files import *
 vowel = 'u'
 
 # cascade model
-cas_f_u = [350, 1250, 2200, 3300, 4200]  # cutoff frequency
-cas_b_u = [65, 110, 140, 250, 200]  # bandwidth
+cas_f_u = [350, 1250, 2200, 3500, 4210]  # cutoff frequency
+cas_b_u = [65, 110, 140, 300, 400]  # bandwidth
 cas_output = cascade_waveform(vowel, cas_f_u, cas_b_u)
 
 # parallel model

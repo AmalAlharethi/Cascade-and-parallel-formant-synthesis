@@ -7,9 +7,9 @@ from Generate_files import *
 vowel = 'e'
 
 # cascade model
-cas_f_a = [530, 1840, 2480, 3250, 3720] # cutoff frequency
-cas_b_a = [60, 90, 130, 140, 200]
-cas_output = cascade_waveform(vowel, cas_f_a, cas_b_a)
+cas_f_e = [530, 1840, 2480, 3600, 4800] # cutoff frequency
+cas_b_e = [90, 100, 200, 540, 800]
+cas_output = cascade_waveform(vowel, cas_f_e, cas_b_e)
 
 # parallel model
 f_e = [530, 1840, 2480]  # cutoff frequency

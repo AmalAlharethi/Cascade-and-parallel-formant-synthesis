@@ -11,7 +11,7 @@ cas_b_a = [100, 70, 200, 250, 200]
 
 # parallel model @mal
 f_a = [660, 1200, 2550] # cutoff frequency
-b_a = [130, 70, 200] # bandwidth 45 200 400
+b_a = [100, 70, 200] # bandwidth 45 200 400
 gain = [1.76, 0.89,0.23] # amplitude control
 (amp_a, pha_a) = parallel_frequency_response( gain, f_a, b_a)
 

@@ -5,15 +5,15 @@ from Generate_files import *
 vowel_i = 'i'
 
 # cascade model
-cas_f_i = [310, 2030, 2960, 4080, 4950]
-cas_b_i = [45, 200, 400, 400, 690]
+cas_f_i = [550, 2200, 3000, 3800, 4800]
+cas_b_i = [60, 130, 160, 210, 260] 
 (cas_amp_i, cas_pha_i) = cascade_frequency_response(vowel_i, cas_f_i, cas_b_i)
 
 # parallel model
-f_i = [310, 2030, 2960] # cutoff frequency
-b_i = [45, 200, 400] # bandwidth
-gain = [1.06, 0.18, 0.4] # amplitude control
-(amp_i, pha_i) = parallel_frequency_response(vowel_i, gain, f_i, b_i)
+f_i = [550, 2200, 3000] # cutoff frequency
+b_i = [60, 130, 160] # bandwidth
+gain = [1.82, 0.82, 0.14] # amplitude control
+(amp_i, pha_i) = parallel_frequency_response(gain, f_i, b_i)
 
 # plot amplitude and phase responses
 f_step = 1
